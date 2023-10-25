@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAJ Validator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>TAJ Validator</h1>
+
+    <form>
+      <input
+        type="number"
+        id="taj"
+        required
+        pattern="/^-?\d+\.?\d*$/"
+        onKeyPress="if(this.value.length==9) return false;"
+      />
+      <button type="button" onclick="checkTAJ()">Ellenőrzés</button>
+    </form>
+
+    <p id="result"></p>
+  </body>
+</html>
