@@ -3,18 +3,18 @@ body {
   background-color: #121212;
   color: #338ef7;
   text-align: center;
-  margin-top: 10%;
   font-size: 1.5rem;
+  margin: 10% auto;
+  width: 100%;
 }
 
 form {
-  width: 300px;
+  max-width: 300px;
   margin: 0 auto;
 }
 
 label,
 input {
-  display: block;
   margin: 10px 0;
   color: #338ef7;
   font-size: 2rem;

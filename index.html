@@ -12,11 +12,11 @@
 
     <form>
       <input
-        type="number"
+        type="text"
         id="taj"
+        oninput="restrictInput(this, 'number')"
+        maxlength="9"
         required
-        pattern="/^-?\d+\.?\d*$/"
-        onKeyPress="if(this.value.length==9) return false;"
       />
       <button type="button" onclick="checkTAJ()">Ellenőrzés</button>
     </form>
