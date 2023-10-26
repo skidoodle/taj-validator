@@ -10,7 +10,7 @@ function validateTAJ(taj) {
 
   for (let i = 0; i < taj.length; i++) {
     if (i < 8) {
-      sum += i % 2 == 0 ? parseInt(taj[i]) * 7 : parseInt(taj[i]) * 3;
+      sum += (i + 1) % 2 == 0 ? parseInt(taj[i]) * 7 : parseInt(taj[i]) * 3;
       num += taj[i];
     }
   }
