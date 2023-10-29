@@ -4,21 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TAJ Validator</title>
-    <script src="script.js"></script>
+    <script src="script.js" async></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>TAJ Validator</h1>
 
     <form>
-      <input
-        type="text"
-        id="taj"
-        oninput="restrictInput(this, 'number')"
-        maxlength="9"
-        required
-      />
-      <button type="button" onclick="checkTAJ()">Ellenőrzés</button>
+      <input type="text" id="taj" oninput="restrictInput(this, 'number')" />
+      <button type="submit" onclick="checkTAJ()">Ellenőrzés</button>
     </form>
 
     <p id="result"></p>
