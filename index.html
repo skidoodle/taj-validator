@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="hu">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TAJ Validator</title>
-    <script src="script.js" async></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="style.css" />
+    <script async src="script.js"></script>
   </head>
   <body>
     <h1>TAJ Validator</h1>
-
     <form>
       <input type="text" id="taj" oninput="restrictInput(this, 'number')" />
       <button type="submit" onclick="checkTAJ()">Ellenőrzés</button>
     </form>
-
     <p id="result"></p>
   </body>
 </html>
